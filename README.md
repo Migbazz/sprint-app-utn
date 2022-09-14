@@ -2,7 +2,7 @@ Sprint App 1 UTN
 
 Creado por:
 - Tomás Villagra 
-- Thiago Zambollini
+- Thiago Zambonini
 - Miguel Bazzarelli
 - Javier Rolito
 - Agusto Sanchez
