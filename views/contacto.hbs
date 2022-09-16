@@ -1,0 +1,51 @@
+<section id="contact">
+    <form action="./contacto">
+        <h2>CONTACT ME</h2>
+
+    
+        <input type="text" name="nombre" required placeholder="Escriba su nombre">
+
+        <input type="email" name="email" required placeholder="Escriba su Email">
+
+        
+        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escriba su Mensaje"></textarea>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+    <div class="social-networks">
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        
+    </div>
+        <div class="cont_h2">
+            <h2 class="text-center">
+                Listado de Contactos
+            </h2>
+        </div>
+        <div class="container">
+    
+
+        <table class="table table-dark">
+            <thead>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Email</th>
+            </thead>
+            <tbody>
+                {{#each results}}
+                <tr>
+                    <td>{{idContacto}}</td>
+                    <td>{{nombre}}</td>
+                    <td>{{email}}</td>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+    </div> 
+    <div class="volver">
+        <button class="volver__boton"><a href="/">Volver al inicio</a></button>
+    </div>    
+</section>

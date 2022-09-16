@@ -1,0 +1,614 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#menu {
+    background-color: rgb(195, 35, 88);
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "about about projects projects"
+        "about about posts contact";
+}
+
+#menu .tile {
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#menu .tile a {
+    text-decoration: none;
+
+}
+
+#menu .tile .front {
+    color: white;
+    background-color: black;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center center;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+
+
+#menu .tile .back {
+    background-color: #222;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#menu .tile:hover .front {
+    margin-top: -100%;
+}
+
+#menu .projects-tile:hover .front {
+    margin-top: -50%;
+}
+
+#menu .about-tile .front {
+    background-image: url(../img/profile.png);
+
+}
+
+#menu .projects-tile .front {
+    background-image: url(../img/work-01.png);
+
+}
+
+#menu .posts-tile .front {
+    background-image: url(../img/work-02.png);
+
+}
+
+#menu .contact-tile .front {
+    background-image: url(../img/work-03.png);
+
+}
+
+
+
+
+.about-tile {
+    grid-area: about;
+}
+
+.projects-tile {
+    grid-area: projects;
+}
+
+
+/*************************
+           ABOUT
+**************************/
+
+
+#about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#about .tile {
+    background-color: #eee;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#about .tile img {
+    width: 70%;
+}
+
+#about .tile-1 {
+    grid-column: 1 / 2;
+
+}
+
+#about .tile-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+
+}
+
+#about .tile-2 img {
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+}
+
+#projects {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
+        "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-3 photo-3 photo-4 photo-4"
+        "main-photo main-photo main-photo photo-2 photo-2 photo-2 photo-5 photo-17 photo-4 photo-4"
+        "main-photo main-photo main-photo photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9"
+        "main-photo main-photo main-photo photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9"
+        "main-photo main-photo main-photo photo-7 photo-7 photo-8 photo-8 photo-8 photo-8 photo-8"
+        "main-photo main-photo main-photo photo-10 photo-10 photo-8 photo-8 photo-8 photo-8 photo-8"
+        "main-photo main-photo main-photo photo-10 photo-10 photo-11 photo-11 photo-11 photo-12 photo-12"
+        "main-photo main-photo main-photo photo-13 photo-14 photo-11 photo-11 photo-11 photo-12 photo-12"
+        "main-photo main-photo main-photo photo-15 photo-16 photo-11 photo-11 photo-11 photo-12 photo-12";
+}
+
+#projects .tile {
+    background-color: #CCC;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    background-size: cover;
+    background-position: center center;
+}
+
+#projects .tile a {
+    display: grid;
+    height: 100%;
+}
+
+#projects .tile:not(.main-photo) {
+    opacity: 0.5;
+    transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+} 
+
+#projects .tile:hover:not(.main-photo) {
+    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    -moz-transform: scale(0.99);
+    -ms-transform: scale(0.99);
+    -o-transform: scale(0.99);
+
+    opacity: 1;
+}
+
+
+
+.main-photo {
+    grid-area: main-photo;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    background-image: url(../img/work-17.png);
+}
+
+.main-photo h2, .main-photo div {
+    background-color: black;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.photo-2 {
+    grid-area: photo-2;
+    background-image: url(../img/work-02.png);
+}
+
+.photo-3 {
+    grid-area: photo-3;
+    background-image: url(../img/work-03.png);
+}
+
+.photo-4 {
+    grid-area: photo-4;
+    background-image: url(../img/work-04.png);
+}
+
+.photo-5 {
+    grid-area: photo-5;
+    background-image: url(../img/work-05.png);
+}
+
+.photo-17 {
+    grid-area: photo-17;
+    background-image: url(../img/work-17.png);
+}
+
+.photo-7 {
+    grid-area: photo-7;
+    background-image: url(../img/work-07.png);
+}
+
+.photo-6 {
+    grid-area: photo-6;
+    background-image: url(../img/work-06.png);
+}
+
+.photo-9 {
+    grid-area: photo-9;
+    background-image: url(../img/work-09.png);
+}
+
+.photo-10 {
+    grid-area: photo-10;
+    background-image: url(../img/work-10.png);
+}
+
+.photo-8 {
+    grid-area: photo-8;
+    background-image: url(../img/work-08.png);
+}
+
+.photo-11 {
+    grid-area: photo-11;
+    background-image: url(../img/work-11.png);
+}
+
+.photo-12 {
+    grid-area: photo-12;
+    background-image: url(../img/work-12.png);
+}
+
+.photo-13 {
+    grid-area: photo-13;
+    background-image: url(../img/work-13.png);
+}
+
+.photo-14 {
+    grid-area: photo-14;
+    background-image: url(../img/work-14.png);
+}
+
+.photo-15 {
+    grid-area: photo-15;
+    background-image: url(../img/work-15.png);
+}
+
+.photo-16 {
+    grid-area: photo-16;
+    background-image: url(../img/work-16.png);
+}
+
+
+
+#posts {
+    padding: 10px;
+    background-color: rgb(66,186,255);
+    display: grid;
+    grid-template: repeat(2, 300px) / repeat(3, 350px);
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+#posts .post {
+    display: grid;
+    align-content: end;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: white;
+
+    background-size: cover;
+    background-position: center center;
+
+    overflow: hidden;
+}
+
+#posts .post a {
+    color: white;
+    text-decoration: none;
+}
+
+#posts .post .title {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+}
+
+#posts .post .title:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#posts .post.post-1 {
+    background-image: url(../img/work-01.png);
+}
+
+#posts .post.post-2 {
+    background-image: url(../img/work-03.png);
+}
+
+#posts .post.post-3 {
+    background-image: url(../img/work-06.png);
+}
+
+#posts .post.post-4 {
+    background-image: url(../img/work-07.png);
+}
+
+#posts .post.post-5 {
+    background-image: url(../img/work-08.png);
+}
+
+#posts .post.post-6 {
+    background-image: url(../img/work-09.png);
+}
+
+#contact {
+    background-color: rgb(26, 72, 151);
+    display: grid;
+    grid-template: auto 100px / 700px;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+#contact  form {
+    padding: 20px;
+    color: white;
+    display: grid;
+    gap: 15px;
+    grid-template: auto / auto;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#contact  form input,
+#contact form textarea {
+    padding: 20px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+
+#contact .social-networks {
+    justify-self: center;
+    padding: 10px 0;
+}
+
+#contact .social-networks a {
+    color: white;
+
+}
+
+#contact form input[type="submit"] {
+    background-color: #67ca50;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#contact form input[type="submit"]:hover {
+    background-color: #2a8615;
+    transition: .5s;
+}
+
+
+@media  screen and (max-width: 1090px) {
+    #posts {
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    }
+}
+
+@media  screen and (max-width: 800px) {
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "about projects"
+        "posts contact";
+    }
+
+    #menu .tile:hover .front {
+        margin-top: -50vh;
+    }
+
+    #about {
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+    
+    #about .tile img {
+        width: 70%;
+    }
+
+    #about .tile-2 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    #about .tile-1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #about .tile-3 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    #about .tile-4 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #about .tile-5 {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #projects {
+    grid-template-areas: 
+    "main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo"
+    "main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo"
+    "main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo main-photo"
+    "photo-2 photo-2 photo-2 photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9"
+    "photo-2 photo-2 photo-2 photo-7 photo-7 photo-6 photo-6 photo-6 photo-9 photo-9"
+    "photo-3 photo-3 photo-5 photo-7 photo-7 photo-8 photo-8 photo-8 photo-8 photo-8"
+    "photo-3 photo-3 photo-5 photo-10 photo-10 photo-8 photo-8 photo-8 photo-8 photo-8"
+    "photo-17 photo-4 photo-4 photo-10 photo-10 photo-11 photo-11 photo-11 photo-12 photo-12"
+    "photo-17 photo-4 photo-4 photo-13 photo-14 photo-11 photo-11 photo-11 photo-12 photo-12"
+    "photo-17 photo-4 photo-4 photo-15 photo-16 photo-11 photo-11 photo-11 photo-12 photo-12"; 
+    }
+
+    #contact {
+        padding: 0 20px;
+        grid-template: auto 100px / 100%;
+    }
+
+}
+    
+
+
+@media  screen and (max-width: 500px) {
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "about" 
+        "projects"
+        "posts"
+        "contact";
+    }
+
+    #menu .tile:hover .front {
+        margin-top: -25vh;
+    }
+
+    #about {
+        display: grid;
+    grid-template: auto / auto;
+    gap: 20px;
+    padding: 20px;
+
+    }
+
+    #about .tile-2 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #about .tile-1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    #about .tile-3 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    #about .tile-4 {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    #about .tile-5 {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    #posts {
+        grid-template: repeat(6, 1fr) / repeat(1, 1fr);
+    }
+
+    #posts .title {
+        display: grid;
+    }
+}
+
+.volver {
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.volver__boton{
+    border: none;
+    height: 50px;
+    width: 200px;
+    background: #67ca50;
+    
+    
+}
+.volver__boton:hover{
+    transition: .5s;
+    background-color: #2a8615;
+    
+}
+.volver__boton a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
