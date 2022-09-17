@@ -1,0 +1,33 @@
+ <section class="contactlist">
+ </div>
+        <div class="cont_h2">
+            <h2 class="text-center">
+                Listado de Contactos
+            </h2>
+        </div>
+        <div class="container">
+    
+
+        <table class="table table-dark">
+            <thead>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Email</th>
+            </thead>
+            <tbody>
+                {{#each results}}
+                <tr>
+                    <td>{{idContacto}}</td>
+                    <td>{{nombre}}</td>
+                    <td>{{email}}</td>
+                </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+    
+    <div class="volver">
+        <button class="volver__boton"><a href="/">Volver al inicio</a></button>
+    </div>    
+</div> 
+</section>

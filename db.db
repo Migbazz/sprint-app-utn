@@ -1,0 +1,10 @@
+
+create database if not exists sprintcontact;
+
+use sprintcontact;
+
+create table contacts(
+idContacto int not null auto_increment primary key,
+nombre varchar(40) not null,
+email varchar(40) not null
+);
