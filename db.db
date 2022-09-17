@@ -8,3 +8,7 @@ idContacto int not null auto_increment primary key,
 nombre varchar(40) not null,
 email varchar(40) not null
 );
+
+select * from contacts;
+
+insert into contacts values (null, "Pedro", "Pedroviveenmi@gmail.com");
