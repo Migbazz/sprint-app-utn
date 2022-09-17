@@ -4,7 +4,7 @@ Creado por:
 - Tomás Villagra 
 - Thiago Zambonini
 - Miguel Bazzarelli
-- Javier Rolito
+- Rolando Marin
 - Agusto Sanchez
 
 Front con HTML
