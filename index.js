@@ -35,34 +35,28 @@ app.get('/', (req, res,) =>{
     res.render('index')
 })
 
-<<<<<<< HEAD
 
 app.get('/lista',(req,res) =>{
-=======
-app.get('/contacto',(req,res) =>{
->>>>>>> 980e69ae63bbbb2c9f5211befe69c048b686d045
+
 
         let sql = 'SELECT * FROM contacts';
     
         conexion.query(sql, (err, result) =>{
             if (err) throw err;
-<<<<<<< HEAD
+
             res.render('lista', { 
-=======
-            res.render('contacto', { 
->>>>>>> 980e69ae63bbbb2c9f5211befe69c048b686d045
                 results: result
             });
         });
             
-<<<<<<< HEAD
+
 });
 app.get('/contacto', (req, res) =>{
     res.render('contacto')
 });
-=======
-})
->>>>>>> 980e69ae63bbbb2c9f5211befe69c048b686d045
+
+
+
 
 app.post('/contacto', (req, res) => {
     const { nombre, email } = req.body;
@@ -87,4 +81,4 @@ app.post('/contacto', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`El servidor está trabajando en el Puerto ${PORT}`);
-})
+});
