@@ -17,7 +17,11 @@ section {
     background-color: rgb(195, 35, 88);
     display: grid;
     grid-template-columns: repeat(4, 200px);
+<<<<<<< HEAD
     grid-template-rows: repeat(3, 200px);
+=======
+    grid-template-rows: repeat(2, 200px);
+>>>>>>> 980e69ae63bbbb2c9f5211befe69c048b686d045
     justify-content: center;
     align-content: center;
     grid-template-areas:
@@ -96,10 +100,13 @@ section {
     background-image: url(../img/work-03.png);
 
 }
+<<<<<<< HEAD
 #menu .list-tile .front {
     background-image: url(../img/work-18.png);
 
 }
+=======
+>>>>>>> 980e69ae63bbbb2c9f5211befe69c048b686d045
 
 
 
@@ -616,6 +623,7 @@ section {
     font-size: 20px;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 .contactlist {
     background-color: rgb(26, 72, 151);
@@ -627,3 +635,5 @@ section {
     font-size: 40px;
     text-shadow: 3px 3px 5px #67ca50, 6px 6px 10px #67ca50,12px 12px 20px #67ca50,18px 18px 30px #67ca50;
 }
+=======
+>>>>>>> 980e69ae63bbbb2c9f5211befe69c048b686d045
