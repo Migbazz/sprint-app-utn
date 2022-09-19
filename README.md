@@ -9,7 +9,7 @@
 * **Augusto Sanchez**
 
 ## Frontend realizado con: 
-* **HTML5** 
+* **Handlebars** 
 
 ## Backend realizado con: 
 * **Node.js (v15.0.0)** 
