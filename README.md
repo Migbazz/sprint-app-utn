@@ -8,10 +8,10 @@
 * **Rolando Marin**
 * **Agusto Sanchez**
 
-##Frontend realizado con: 
+## Frontend realizado con: 
 * **HTML5** 
 
-##Backend realizado con: 
+## Backend realizado con: 
 * **Node.js (v15.0.0)** 
 * **Yarn**  
 * **Express** 
