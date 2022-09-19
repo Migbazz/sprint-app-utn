@@ -1,12 +1,18 @@
-Sprint App 1 UTN
+# Sprint App 1 UTN
 
-Creado por:
-- Tomás Villagra 
-- Thiago Zambonini
-- Miguel Bazzarelli
-- Rolando Marin
-- Agusto Sanchez
+## Creado por:
 
-Front con HTML
-Back: Node v15.0.0 Yarn - express - SQL (con insert y select)
-Arquitectura MVC
+* **Tomás Villagra**
+* **Thiago Zambonini**
+* **Miguel Bazzarelli**
+* **Rolando Marin**
+* **Augusto Sanchez**
+
+## Frontend realizado con: 
+* **Handlebars** 
+
+## Backend realizado con: 
+* **Node.js (v15.0.0)** 
+* **Yarn**  
+* **Express** 
+* **MySQL -insert y select-**
