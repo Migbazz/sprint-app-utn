@@ -6,7 +6,7 @@
 * **Thiago Zambonini**
 * **Miguel Bazzarelli**
 * **Rolando Marin**
-* **Agusto Sanchez**
+* **Augusto Sanchez**
 
 ## Frontend realizado con: 
 * **HTML5** 
